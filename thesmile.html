@@ -64,9 +64,22 @@
            
         }
 
-        .section02 from{
-            text-align: right;
+        
+
+        .outl{
+            outline-style: double;
+            padding-left:10px;
+            padding-top:2px;
+            padding-bottom:2px;
+            border-radius:10px;
         }
+
+        .section2 h2{
+            font-family: Brush Script MT, Brush Script Std, cursive;
+            font-size: 200%;
+        }
+
+    
     </style>
 </head>
 <body>
@@ -96,17 +109,17 @@
         <img src="image/the smile.jpg">
         <p>Price(delivery included)</p><br>
         <hr><br>
-        <input type ="radio" name ="price"><labal>Standard 78.90 €</labal><br><br>
-        <input type ="radio" name ="price"><labal>Deluxe 98.90 €</labal><br><br>
-        <input type ="radio" name ="price"><labal>Premium 118.90 €</labal>
+        <div class="outl"><input type ="radio" name ="price"><labal>Standard 78.90 €</labal></div><br>
+        <div class="outl"><input type ="radio" name ="price"><labal>Deluxe 98.90 €</labal></div><br>
+        <div class="outl"><input type ="radio" name ="price"><labal>Premium 118.90 €</labal></div><br>
         
     </div>
 
     <div class ="section02">
     <div class="section2"><br>
         <h2>The Smile</h2><br>
-        <p>Bouquet of roses and mixed seasonal flowers in vivid colors, decorated with greenery. Suitable
-            for every occasion. Conveys joy</p>
+        <p style="font-style: bold;">Bouquet of roses and mixed seasonal flowers in vivid colors, decorated with greenery. Suitable
+            for every occasion. Conveys joy</p><br>
             <p>Seasonal Flowers or Plants may be changed if unavailable. However, we will try to stick to the type of the
                 chosen flowers as much as possible. The vase is not included. The picture usually referring the "Deluxe"
                 arrangement.</p><br>
@@ -114,19 +127,20 @@
 
                 <from>
                     <labal>Delivery date*</labal>
-                    <input type ="text" name ="date"><br><br>
+                    <input type ="date" name ="date"><br><br>
                     <labal>Delivery time</labal>
+                    
                     <input type ="radio" name ="wdate"><labal>Working Day-Free(9 a.m - 9 p.m) </labal><br>
-                    <input type ="radio" name ="wdate"><labal>Sunday and Public Holidays 4.00 €</labal><br><br>
+                    <input type ="radio" name ="wdate"><labal>Sunday and Public Holidays 4.00 €</labal>
+                    
+                    <br><br>
                     <labal>Quantity</labal>
                     <input type ="text" name =quantity><br><br>
                     <labal>Message<br>out of ideas? Choose a message!</labal>
-                    <input type ="text" name ="message"><br><br>
-                    <labal>Signature</labal>
-                    <input type ="text" name="signature">
-
-
-
+                    <input type ="" name ="message"><br><br>
+                    <labal>Signature</labal><br>
+                    <input type ="text" name="signature"><br><br>
+                    <input type=submit value="Continue" name="submit">
 
                 </from>
     
