@@ -118,15 +118,75 @@
 
         .mainimg{
             border:1px solid black;
+            
+         
         }
 
        .image{
-           margin-left:40px;
+           margin-left:25px;
        }
         
        .tsty{
            font-family: Brush Script MT, Brush Script Std, cursive;
            font-size: 160%;
+       }
+
+       .shap{
+
+         margin-top:15px;  
+        float:right;   
+        display: inline-block;
+  
+        width: auto;
+	    height: 38px;
+	
+	background-color: #521919;
+	-webkit-border-radius: 3px 4px 4px 3px;
+	-moz-border-radius: 3px 4px 4px 3px;
+	border-radius: 3px 4px 4px 3px;
+	
+	border-left: 1px solid #979797;
+
+	/* This makes room for the triangle */
+	margin-left: 19px;
+	
+	position: relative;
+	
+	color: white;
+	font-weight: 300;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 22px;
+	line-height: 38px;
+
+	padding: 0 10px 0 10px;
+}
+
+/* Makes the triangle */
+.shap:before {
+	content: "";
+	position: absolute;
+	display: block;
+	left: -19px;
+	width: 0;
+	height: 0;
+	border-top: 19px solid transparent;
+	border-bottom: 19px solid transparent;
+	border-right: 19px solid #521919;
+}
+
+/* Makes the circle */
+.shap:after {
+	content: "";
+	background-color: white;
+	border-radius: 50%;
+	width: 4px;
+	height: 4px;
+	display: block;
+	position: absolute;
+	left: -9px;
+	top: 17px;
+        
+       
        }
      
         
@@ -187,28 +247,27 @@
             <div class="row">
 
             <div class="imgt">
-            <a href ="thesmile.html"> <img src ="image/the smile.jpg"></a>
-            <div class="imgtext"><span class="tsty">The Smile</span><br>Roses and mixed flowers
-            <p>from 78.90 €</p>
-            </div>
+            <a href ="thesmile.html"><img src ="image/the smile.jpg"></a>
+            <div class="imgtext"><span class="tsty">The Smile</span><br>Roses and mixed flowers</div>
+            <p class="shap">from 78.90 €</p>
             </div>
 
            <div class="imgt">
             <img src ="image/remy.jpg">
             <div class =imgtext><span class="tsty">Remy</span><br>White and red roses, lilies,<br> daisies or gerberas and<br> mixed flowers</div>
-            <p>from 78.80 €</p>
+            <p class="shap">from 78.80 €</p>
            </div>
 
             <div class="imgt">
             <img src ="image/vwana.jpg">
             <div class="imgtext"><span class="tsty">Vwana</span><br>Sunny roses, gerberas, <br>alstroemerias and mixed flowers</div>
-            <p>from 77.50 €</p>
+            <p class="shap">from 77.50 €</p>
             </div>
 
             <div class="imgt">           
             <img src ="image/nora.jpg">
             <div class="imgtext"><span class="tsty">Nora</span><br>Red roses, daisies and mixed flowers</div>
-            <p>from 77.70 €</p>
+            <p class="shap">from 77.70 €</p>
             </div>
             </div>
 
@@ -217,25 +276,25 @@
                 <div class="imgt">
                 <img src ="image/alexa.jpg">
                 <div class="imgtext"><span class="tsty">The Smile</span><br>Roses and mixed flowers</div>
-                <p>from 77.00 €</p>
+                <p class="shap">from 77.00 €</p>
                 </div>
     
                <div class="imgt">
                 <img src ="image/aria.jpg">
                 <div class =imgtext><span class="tsty">Remy</span><br>White and red roses, lilies,<br> daisies or gerberas and<br> mixed flowers</div>
-                <p>from 77.70 €</p>
+                <p class="shap">from 77.70 €</p>
                </div>
     
                 <div class="imgt">
                 <img src ="image/bianca.jpg">
                 <div class="imgtext"><span class="tsty">Vwana</span><br>Sunny roses, gerberas, <br>alstroemerias and mixed flowers</div>
-                <p>from 89.00  €</p>
+                <p class="shap">from 89.00  €</p>
                 </div>
     
                 <div class="imgt">           
                 <img src ="image/Cheyanne.jpg">
                 <div class="imgtext"><span class="tsty">Nora</span><br>Red roses, daisies and mixed flowers</div>
-                <p>from 78.00 €</p>
+                <p class="shap">from 78.00 €</p>
                 </div>
                 </div>
         
@@ -244,25 +303,25 @@
                     <div class="imgt">
                  <img src ="image/Denise.jpg">
                     <div class="imgtext"><span class="tsty">The Smile</span><br>Roses and mixed flowers</div>
-                    <p>from 78.90 €</p>
+                    <p class="shap">from 78.90 €</p>
                     </div>
         
                    <div class="imgt">
                     <img src ="image/gabriella.jpg">
                     <div class =imgtext><span class="tsty">Remy</span><br>White and red roses, lilies,<br> daisies or gerberas and<br> mixed flowers</div>
-                    <p>from 77.80 €</p>
+                    <p class="shap">from 77.80 €</p>
                    </div>
         
                     <div class="imgt">
                     <img src ="image/Lia.jpg">
                     <div class="imgtext"><span class="tsty">Vwana</span><br>Sunny roses, gerberas, <br>alstroemerias and mixed flowers</div>
-                    <p>from 92.70 €</p>
+                    <p class="shap">from 92.70 €</p>
                     </div>
         
                     <div class="imgt">           
                     <img src ="image/Lucille.jpg">
                     <div class="imgtext"><span class="tsty">Nora</span><br>Red roses, daisies and mixed flowers</div>
-                    <p>from 84.90  €</p>
+                    <p class="shap">from 84.90  €</p>
                     </div>
                     </div>
 
